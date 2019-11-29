@@ -1,0 +1,10 @@
+.text-bold {font-weight:bold;}
+
+#pef-questions .question {border-bottom:1px solid #bbb; margin-bottom:20px; padding-bottom:20px;}
+#pef-questions .question:last-of-type {border-bottom:0;}
+#pef-questions input {margin-right:10px;}
+#pef-questions .sub {font-style:italic; color:#999;}
+#pef-questions h2 {margin-top:0;}
+
+#pef-questions #results {background:lightblue; padding:10px 20px;}
+#pef-questions #scores .highlight {background:red; box-shadow:0 0 5px 5px red;}

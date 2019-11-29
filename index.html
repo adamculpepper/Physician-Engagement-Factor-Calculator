@@ -1,0 +1,185 @@
+<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="./assets/css/styles.css">
+<script type="text/javascript" src="./assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="./assets/js/scripts.js"></script>
+
+<div id="pef-questions" class="container">
+	<div class="alert alert-info">
+		<b>PHYSICIAN ENGAGEMENT FACTOR</b><br>
+		Physician engagement and alignment are critical to becoming a highly reliable healthcare organization. A3 Healthcare’s self-scoring Physician Engagement Factor provides an important indication of an organization’s level of physician involvement in its Lean Six Sigma culture of safety and quality.
+	</div>
+
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">ENGAGEMENT FACTORS</div>
+				<div class="panel-body">
+					<b>Directions:</b> Select the answer that best describes your organization.<br>
+					Place the total points in the score box following item 5.
+				</div>
+			</div>
+			<div class="question" id="q1">
+				<div class="text-bold">1. Performance improvement ideas, issues and concerns are heard and addressed through ongoing dialogue in</div>
+				<input type="radio" name="question1" value="1">+1 Service line meetings or through service line leader or chief medical officer.<br>
+				<input type="radio" name="question1" value="2">+2 Regular feedback loop, surveys and/or meeting forum schedule with administrative leaders present.<br>
+				<input type="radio" name="question1" value="3">+3 Steering committee, panel or cabinet, united by a shared vision, led by CEO with administrator-physician dyad leadership support.<br>
+			</div>
+			<div class="question" id="q2">
+				<div class="text-bold">2. Performance improvement initiatives in the organization are selected and prioritized primarily because they</div>
+				<input type="radio" name="question2" value="1">+1 Have financial impact (lower cost or increase revenue).<br>
+				<input type="radio" name="question2" value="2">+2 Reduce inefficiencies like waste, hassle factors.<br>
+				<input type="radio" name="question2" value="3">+3 Enhance clinical safety and outcomes.<br>
+			</div>
+			<div class="question" id="q3">
+				<div class="text-bold">3. Physician champions for performance improvement initiatives are</div>
+				<input type="radio" name="question3" value="1">+1 Scant to nonexistent.<br>
+				<input type="radio" name="question3" value="2">+2 Physicians in administrative roles (chief medical officer, clinical affairs or service line medical director).<br>
+				<input type="radio" name="question3" value="3">+3 Any medical staff physician who is passionate about change, and typically recommends the project initially.<br>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="question" id="q4">
+				<div class="text-bold">4. Physician leaders receive change management training through</div>
+				<input type="radio" name="question4" value="1">+1 No training opportunities are provided.<br>
+				<input type="radio" name="question4" value="2">+2 Informal training and support provided by administrative leaders or designees.<br>
+				<input type="radio" name="question4" value="3">+3 A formal Lean Six Sigma training program geared toward physicians.<br>
+			</div>
+			<div class="question" id="q5">
+				<div class="text-bold">5. When performance improvement initiatives affecting or involving medical staff are stalling or posing difficulties,</div>
+				<input type="radio" name="question5" value="1">+1 Administration avoids conflict, abandons the project and moves on to another project until the timing is better.<br>
+				<input type="radio" name="question5" value="2">+2 Physician champions advocate for change among peers.<br>
+				<input type="radio" name="question5" value="3">+3 Physician champions and administrative leaders engage in a trusting, actionable dialogue that results in course correction.<br>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">BONUS FACTORS</div>
+				<div class="panel-body">
+					<b>Directions:</b> In the section below, circle only if the attribute firmly exists in your organization. If the attribute does not accurately represent your organization, leave it blank. Enter the bonus section sum after item 8, or leave blank if no bonus points were earned.
+				</div>
+			</div>
+			<div id="bonuses">
+				<input type="checkbox" id="bonus1" name="bonus1"><b>6. Majority of medical staff is mostly aligned and admits patients primarily to your organization.</b><br>
+				<input type="checkbox" id="bonus2" name="bonus2"><b>7. Majority of medical staff is financially incentivized through formal performance- based agreements.</b><br>
+				<input type="checkbox" id="bonus3" name="bonus3"><b>8. Organization has a defined system in place to financially compensate physicians for time spent on leading projects.</b><br>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<h2>Score Results</h2>
+
+			<div id="results">results</div>
+			<hr>
+
+			<div id="scores">
+				<div id="score1" class="hidden">
+					<div class="panel panel-default">
+						<div class="panel-heading">EXEMPLARY PEF - Score range 40-45</div>
+						<div class="panel-body">
+							Physicians are actively engaged in improvement activities, collaborating with administration to achieve shared goals; mutual trust and respect are based in profound knowledge/understanding of each others’ roles, processes and systems.
+						</div>
+					</div>
+				</div>
+				<div id="score2" class="hidden">
+					<div class="panel panel-default">
+						<div class="panel-heading">HIGH PEF: Score range 25-39</div>
+						<div class="panel-body">
+							Bonus factors exist in the medical staff/organizational structure that more readily align incentives; take advantage of these! Physicians are likely to be involved in strategic planning activities and influence senior leadership decision-making processes.
+						</div>
+					</div>
+				</div>
+				<div id="score3" class="hidden">
+					<div class="panel panel-default">
+						<div class="panel-heading">MODERATE PEF: Score range 11-24</div>
+						<div class="panel-body">
+							Beginning to develop formal structures to engage physicians, with opportunity to further align interests; physician involvement likely limited to structural leaders and not spread throughout med staff; physician culture beginning to influence the larger organizational culture.
+						</div>
+					</div>
+				</div>
+				<div id="score4" class="hidden">
+					<div class="panel panel-default">
+						<div class="panel-heading">LOW PEF: Score range 0-10</div>
+						<div class="panel-body">
+							Lacking formal mechanisms to engage physicians in improvement activities. Physician involvement is either nonexistent, or sporadic/random; potentially low trust between MD and organization/administration, lacking shared vision.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<hr>
+	</div>
+
+	<div class="row">
+		<div class="col-12">
+			<h2>Strategic Recommendations</h2>
+		</div>
+		<div class="col-sm-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">SHARE THE VISION.</div>
+				<div class="panel-body">
+					<div class="sub">Formalize structure for ongoing dialogue at all stages of improvement.</div><br>
+					Physicians need to be included in organizational performance improvement from the beginning. Communicating more of the “why” and not waiting until the “how” of the change helps shift physician view from personal accountability to systems theory of organizational improvement.<br><br>
+
+					<u>Recommendations:</u>
+					<ul>
+						<li>Move from sporadic involvement (as needed, or by project) to routine, standing agenda items at med staff meetings.</li>
+						<li>Develop a formal steering committee for PI/LSS comprised of hospital executives and active med staff that meets routinely to assess vision for LSS and project alignment.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">CULTIVATE COMMON PURPOSE.</div>
+				<div class="panel-body">
+					<div class="sub">Select purposeful, intentional projects designed for collaboration.</div><br>
+					To engage physicians from the beginning, organizations need to work on projects that address physician concerns, not primarily financial return. If the organization purposefully balances its PI portfolio of projects with ones that reduce hassle factors for physicians or improve clinical outcomes, physicians will see the value of LEAN/six sigma much sooner and advocate for even more changes.<br><br>
+
+					<u>Recommendations:</u>
+					<ul>
+						<li>Survey physicians for “hassle factors” and develop a plan to systematically reduce them using LEAN tools for reducing waste.</li>
+						<li>Utilize Six Sigma to solve complex clinical outcomes for patient populations (i.e. readmissions, evidence best practice bundles).</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">MOBILIZE COMMITMENT THROUGH THE “RIGHT” PHYSICIAN CHAMPIONS.</div>
+				<div class="panel-body">
+					<div class="sub">Look beyond formal leadership roles for physician champions.</div><br>
+					While it may be “easier” for physicians with administrative roles to commit time to performance improvement initiatives, improvement success depends heavily on “influence” which may not be formalized. Any member of medical staff who is passionate about change should be empowered with change management skills to lead the organization to an improved state.<br><br>
+					<u>Recommendations:</u>
+					<ul>
+						<li>Rotate members of medical staff on PI/LSS steering committee to systematically look for interest/passion.</li>
+						<li>Recruit physicians using input from service line leaders or service chiefs for those who demonstrate passion, interest, and leadership ability.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">EMPOWER PHYSICIAN LEADERS WITH CHANGE MANAGEMENT SKILLS.</div>
+				<div class="panel-body">
+					<div class="sub">Provide training and coaching to support your physician leaders.</div><br>
+					Harnessing physicians’ natural response to the scientific method, LEAN Six Sigma follows a similar framework of evaluating and diagnosing a problem, prior to “treatment” and follow-up. However, leadership and process improvement is not taught in medical education and residency.<br><br>
+					<u>Recommendations:</u>
+					<ul>
+						<li>Provide formal training programs in leadership, change management, and LEAN six sigma that is customized specifically for physician leaders.</li>
+						<li>Support your physician leaders through coaching to boost project results and engagement.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">DEVELOP TRUST WITH TRANSPARENCY.</div>
+				<div class="panel-body">
+					<div class="sub">Follow through and commit to results.</div><br>
+					Change is hard. Often large, complex change initiatives take time, and medical staff commitment may wane without routine project status updates. When projects are not going as designed, approach the problem with transparency. Developing trusting, actionable dialogue will assist in course correction and eliminate the “we/they” that may exist between organizations and medical staff.<br><br>
+					<u>Recommendations:</u>
+					<ul>
+						<li>Select fewer number of projects to ensure optimal success and positive leader engagement.</li>
+						<li>Communicate regularly and often, top-down and two-way, through informal and formal channels (town hall meetings, CEO memos, service line meetings, newsletters, hall hits, one-on-one).</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
